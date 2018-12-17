@@ -9,6 +9,13 @@ $(document).ready(function() {
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
         var totalScore;
+        inputJob(name,techPlacement); 
     });
-
 });
+
+
+function inputJob(name,techPlacement){
+   $(".result").html("Congradulations" + "," + " " + name + " " + "your dream job is" + " " +techPlacement+ "."); 
+}
+
+
