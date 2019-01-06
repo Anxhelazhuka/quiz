@@ -13,7 +13,36 @@ $(document).ready(function() {
     });
 });
 
-
+function q1Result(x){
+     if (x === "Read"){
+      return 1;
+  }else if (x==="Play"){
+      return 2;
+  }else if (x=== "Sing"){
+      return 3;
+  }else{
+      return 4;
+}
+}
+function q2Result(y){
+     if (y === "Coffee"){
+      return 1;
+  }else if (y==="Pancakes"){
+      return 2;
+  }else{
+      return 3;
+}
+}
+function q3Result(z){
+     if (z === "Dog"){
+      return 1;
+  }else{
+      return 2;
+}
+}
+function totalScore(x,y,z){
+    $(".result").return (x+y+z);
+}
 function inputJob(name,techPlacement){
    $(".result").html("Congradulations" + "," + " " + name + " " + "your dream job is" + " " +techPlacement+ "."); 
 }
